@@ -1,97 +1,63 @@
-Remind-Me-Later API
-📝 Overview
-A simple yet powerful reminder management API that allows users to:
+# ⏰ Remind-Me-Later API
 
-Create reminders with specific dates/times
+A simple yet powerful Django REST API that allows users to create reminders with specific dates, times, messages, and notification methods like **Email** or **SMS** (expandable in the future).
 
-Set notification preferences (SMS/Email)
+---
 
-Store reminder messages securely
+## 📝 Overview
 
-🚀 Features
-RESTful API endpoints
+**Remind-Me-Later** is designed to be the backend for a reminder management system. It enables frontend apps or users to:
 
-JSON payload support
+- Create reminders
+- Set notification preferences (SMS/Email)
+- Store and retrieve scheduled reminder messages
 
-Data validation
+---
 
-Future-proof architecture for additional notification methods
+## 🚀 Features
 
-Easy integration with frontend applications
+- ✅ RESTful API endpoints
+- ✅ JSON-based request/response
+- ✅ Input validation
+- ✅ Modular and future-ready architecture
+- ✅ Easy frontend integration
+- 🚫 No authentication (can be added)
 
-🛠️ Technology Stack
-Backend: Django REST Framework
+---
 
-Database: SQLite (default) / PostgreSQL (production-ready)
+## 🛠️ Tech Stack
 
-Authentication: None (can be added)
+- **Backend**: Django REST Framework
+- **Database**: SQLite (dev) / PostgreSQL (production-ready)
+- **Documentation**: Auto-generated OpenAPI schema
+- **Language**: Python 3.8+
 
-API Documentation: Automatic OpenAPI schema
+---
 
-🔧 Installation
-Prerequisites
-Python 3.8+
+## 🔧 Installation
 
-pip package manager
+### Prerequisites
 
-Setup
-bash
-# Clone the repository
-git clone https://github.com/yourusername/remind-me-later.git
+- Python 3.8 or above
+- `pip` package manager
+
+### Setup Steps
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/sonali-more5117/Remind-Me-Later-.git
 cd remind-me-later
 
-# Create virtual environment
+# 2. Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate     # Windows: venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# 3. Install dependencies
+ip install fastapi uvicorn
+uvicorn main:app --reload
 
-# Run migrations
+# 4. Run migrations
 python manage.py migrate
 
-# Start development server
+# 5. Start development server
 python manage.py runserver
-🌐 API Endpoints
-Base URL
-http://localhost:8000/api/
-
-Available Endpoints
-Endpoint	Method	Description
-/reminders/	POST	Create new reminder
-/reminders/{id}/	GET	Retrieve specific reminder
-/reminders/	GET	List all reminders (optional)
-📨 Request/Response Examples
-Create Reminder (POST /api/reminders/)
-Request:
-
-json
-{
-  "date": "2023-12-25",
-  "time": "15:30:00",
-  "message": "Christmas Party",
-  "notification_method": "EMAIL"
-}
-Success Response (201 Created):
-
-json
-{
-  "id": 1,
-  "date": "2023-12-25",
-  "time": "15:30:00",
-  "message": "Christmas Party",
-  "notification_method": "EMAIL"
-}
-🗃️ Database Schema
-python
-class Reminder(models.Model):
-    NOTIFICATION_METHODS = [
-        ('SMS', 'SMS'),
-        ('EMAIL', 'Email'),
-    ]
-    
-    date = models.DateField()
-    time = models.TimeField()
-    message = models.TextField()
-    notification_method = models.CharField(max_length=5, choices=NOTIFICATION_METHODS)
-    created_at = models.DateTimeField(auto_now_add=True)
