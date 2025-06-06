@@ -63,8 +63,9 @@ python manage.py migrate
 python manage.py runserver
 
 # 6. Output
-![image](https://github.com/user-attachments/assets/baa848ed-fab8-4633-aef0-c0940ade9ef1)
-![image](https://github.com/user-attachments/assets/46a79f0b-8f51-471d-aef9-dd7eef1414c7)
+![Screenshot (52)](https://github.com/user-attachments/assets/17d9be4e-2087-4d13-a6aa-a9aaf6b484e9)
+![Screenshot (53)](https://github.com/user-attachments/assets/c9542b9d-ba9a-4447-8313-eb45bf86e231)
+
 
 
 
