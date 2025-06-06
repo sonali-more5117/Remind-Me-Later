@@ -61,3 +61,10 @@ python manage.py migrate
 
 # 5. Start development server
 python manage.py runserver
+
+# 6. Output
+![image](https://github.com/user-attachments/assets/8f3ed2f3-d40d-4baa-817a-e39092408aef)
+![image](https://github.com/user-attachments/assets/f8511692-9d4e-42d6-8af5-3cd901c43b77)
+
+
+
