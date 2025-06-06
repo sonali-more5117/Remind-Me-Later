@@ -63,9 +63,5 @@ python manage.py migrate
 python manage.py runserver
 
 # 6. Output
-![Screenshot (52)](https://github.com/user-attachments/assets/17d9be4e-2087-4d13-a6aa-a9aaf6b484e9)
-![Screenshot (53)](https://github.com/user-attachments/assets/c9542b9d-ba9a-4447-8313-eb45bf86e231)
-
-
-
-
+"C:\Users\Sonali\OneDrive\Pictures\Screenshots\Screenshot (52).png"
+"C:\Users\Sonali\OneDrive\Pictures\Screenshots\Screenshot (53).png"
