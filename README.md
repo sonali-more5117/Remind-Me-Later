@@ -63,5 +63,5 @@ python manage.py migrate
 python manage.py runserver
 
 # 6. Output
-"C:\Users\Sonali\OneDrive\Pictures\Screenshots\Screenshot (52).png"
-"C:\Users\Sonali\OneDrive\Pictures\Screenshots\Screenshot (53).png"
+![Screenshot (52)](https://github.com/user-attachments/assets/c465e21e-6a1e-442b-8ac1-901a3aec3898)
+C:\Users\Sonali\AppData\Local\Temp\e7676a89-6f05-4443-bc31-d5c705b6506f_tinified.zip.06f\Screenshot (53).png
