@@ -53,7 +53,7 @@ python -m venv venv
 source venv/bin/activate     # Windows: venv\Scripts\activate
 
 # 3. Install dependencies
-ip install fastapi uvicorn
+pip install fastapi uvicorn
 uvicorn main:app --reload
 
 # 4. Run migrations
