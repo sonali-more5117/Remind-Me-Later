@@ -63,5 +63,6 @@ python manage.py migrate
 python manage.py runserver
 
 # 6. Output
-![Screenshot (52)](https://github.com/user-attachments/assets/c465e21e-6a1e-442b-8ac1-901a3aec3898)
-C:\Users\Sonali\AppData\Local\Temp\e7676a89-6f05-4443-bc31-d5c705b6506f_tinified.zip.06f\Screenshot (53).png
+
+![Screenshot (52)](https://github.com/user-attachments/assets/836da4bf-bded-43d8-8326-461e96484fea)
+![Screenshot (53)](https://github.com/user-attachments/assets/8c2ebd02-953c-4f1d-ac39-f9c2d822a7e1)
